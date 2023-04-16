@@ -7,4 +7,6 @@ run:
 	python main.py
 .PHONY: test
 test:
-	PYTHONPATH=. py.test --verbose -s
+	PYTHONPATH=. py.test --verbose -s	
+docker_build: 
+	docker build -t hello-world-printer . 
